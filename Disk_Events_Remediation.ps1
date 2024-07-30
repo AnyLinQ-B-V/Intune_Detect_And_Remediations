@@ -1,4 +1,18 @@
-Install-Module -Name BurntToast -Force
+$moduleName = "BurntToast"
+
+# Check if the module is installed
+if (!(Get-Module -ListAvailable -Name $moduleName)) {
+    try {
+        Install-Module $moduleName -Force
+    } catch {
+        Write-Host "Error installing module '$moduleName': $($_.Exception.Message)"
+    }
+} else {
+    # Check if the module is loaded
+    if (!(Get-Module -Name $moduleName)) {
+        Import-Module $moduleName
+    }
+}
 function Show-Notification {
     param (
         [string]$EventMessage
