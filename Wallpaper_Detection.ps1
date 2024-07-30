@@ -2,9 +2,9 @@
 $downloadPath = "$env:UserProfile\Pictures\Wallpaper.jpg"
 
 if (Test-Path $downloadPath) {
-    Write-Host "Wallpaper image downloaded and saved successfully"
+    Write-Host "Wallpaper image is already installed, no remedation needed"
     exit 0
 } else {
-    Write-Host "Wallpaper image download failed"
+    Write-Host "Wallpaper image not available, run remediation"
     exit 1
 }
