@@ -29,3 +29,15 @@ Intune running Context:
  - Run script in 64-bit PowerShell set to Yes
 
 Github page to BurnToast: https://github.com/Windos/BurntToast
+
+
+# Windows bloatware removal
+Detect: This detect script checksif any software listed in the bloatware list is installed.
+Remediate: Uninstall any software that is in the bloatware list.
+
+![afbeelding](https://raw.githubusercontent.com/AnyLinQ-B-V/Intune_Detect_And_Remediations/main/assets/Windows_bloatware_Remediation.png)
+
+Intune running Context: 
+ - Run this script using the logged-on credentials set to No
+ - Enforce script signature check set to No
+ - Run script in 64-bit PowerShell set to Yes
