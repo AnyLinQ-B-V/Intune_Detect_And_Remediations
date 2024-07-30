@@ -9,7 +9,8 @@ function Show-Notification {
 
     # Display a notification
     #New-BurntToastNotification -AppLogo 'C:\Path\To\Your\Logo.png' -Text $EventMessage
-    New-BurntToastNotification -Text $EventMessage
+    $Button = New-BTButton -Content 'Contact Interne IT' -Arguments 'mailto:support@anylinq.com'
+    New-BurntToastNotification -Text $EventMessage -Sound Default -Button $Button
 }
 
 
