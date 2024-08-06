@@ -58,7 +58,7 @@ Intune running Context:
 # Set Windows Lockscreen (Lockscreen_Detection.ps1)
  - Detect: This detect script checks if "$env:UserProfile\Pictures\Lockscreen.jpg" exists.
  - Remediate: If "$env:UserProfile\Pictures\Lockscreen.jpg" is not found, detect the users screen resolution, download the custom resolution wallpaper and set it as the default wallpaper.
- - Note: This allows users to set their own wallpaper afterwards.
+ - Note: This allows users to set their own lockscreen afterwards.
 
 ![afbeelding](https://anylinq.com/hubfs/images/lockscreen-3456x2160.jpg)
 
